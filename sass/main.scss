@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    height: 100vh;
+}
+.My__Wallets{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 450px;
+    background-color: #fff;
+    .My__Wallets-left{
+        display: flex;
+        flex-direction: column;
+        overflow:auto;
+        padding: 0 40px;
+        background-color: rgb(233, 233, 233);
+        width: 40%;
+        .left__box1{
+            display: flex;
+            align-items: center;
+            padding-top: 30px;
+            justify-content: space-between;
+            button{
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+            }
+        }
+        .left__box{
+            display: flex;
+            padding: 9px 8px;
+            height: 140px;
+            margin: 20px 0;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 5px;
+            flex-direction: column;
+            h2{
+                padding-top: 7px;
+                font-size: 15px;
+            }
+            h3{
+                padding-top: 7px;
+                font-size: 12px;
+            }
+        }
+    }
+    .My__Wallets-right{
+        width: 60%;
+        padding: 0 30px;
+        overflow:auto;
+        .right__logo1{
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0;
+            border-bottom: 1px solid black;
+            h3{
+                font-weight: 400;
+            }
+        }
+         .right__logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 0;
+            button{
+                outline: none;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+                background-color: transparent;
+            }
+            .right-logo__text{
+                display: flex;
+                flex-direction: column;
+                h2{
+                    font-size: 20px;
+                }
+                h3{
+                    font-size: 15px;
+                    color: rgb(145, 141, 141);
+                    font-weight: 400;
+                }
+            }
+             h4{
+                color: blue;
+                font-weight: 800;
+            }
+            .active{
+                color: chartreuse;
+            }
+        }
+    }
+}
